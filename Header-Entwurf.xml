@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ 
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Die antarktischen Eisverhältnisse : Auszug aus meinem Tagebuch der Südpolarreise der "Belgica" 1898-1899</title>
+                <author>
+                    <persName ref="http://d-nb.info/gnd/12279804X">
+                        <surname>Arctowski</surname>
+                        <forename>Henryk</forename>
+                    </persName>
+                </author>
+                <respStmt>
+                    <persName>
+                        <surname>Dogunke</surname>
+                        <forename>Swantje</forename>
+                    </persName>
+                    <resp>
+                        <note type="remarkResponsibility">Bearbeitung der digitalen Edition.</note>
+                        <date type="importDTA">2023-05-08T13:38:54Z</date>
+                    </resp>
+                </respStmt>
+                
+            </titleStmt>
+            <editionStmt><edition>Vollständige digitalisierte Ausgabe.</edition></editionStmt>
+            <extent>
+                <measure type="images">126</measure>
+                <measure type="tokens"/>
+                <measure type="types"/>
+                <measure type="characters"/>
+            </extent>
+            <publicationStmt>
+                <publisher>
+                    Hochschule der Medien Stuttgart
+                </publisher>
+                    <publisher>
+                        Thrüingische Universitäts- und Landesbibliothek Jena
+                    </publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="MS"/>
+                <biblFull>
+                    <titleStmt>
+                        <title level="m" type="main">Die antarktischen Eisverhältnisse : Auszug aus meinem Tagebuch der Südpolarreise der "Belgica" 1898-1899</title>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/12279804X">
+                                <surname>Arctowski</surname>
+                                <forename>Henryk</forename>
+                            </persName>
+                        </author>
+                        <editor>
+                            <persName ref="http://d-nb.info/gnd/132560585">
+                                <surname>Perthes</surname>
+                                <forename>Bernhard</forename>
+                            </persName>
+                        </editor>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="1"/>
+                    </editionStmt>
+                    <extent>
+                        <measure type="pages">IV, 121 S.</measure>
+                    </extent>
+                    <publicationStmt>
+                        <publisher><name>Perthes Gotha</name></publisher>
+                        <pubPlace>Gotha</pubPlace>
+                        <date type="publication">1903</date>
+                        <date type="creation">1898-1899</date>
+                    </publicationStmt>
+                    <seriesStmt>
+                        <title level="s" type="main">A. Petermann's Mitteilungen aus Justus Perthes' Geographischer Anstalt / Ergänzungsheft</title>
+                        <biblScope unit="volume">144</biblScope>
+                    </seriesStmt>
+                </biblFull>
+                <msDesc xml:id="imagesource-1" corresp="#availability-imagesource-1">
+                    <msIdentifier>
+                        <repository>Thüringer Universitäts-und Landesbibliothek</repository>
+                        <idno>
+                            <idno type="shelfmark"> 4 Geogr.I,63/1 :30.7</idno>
+                            <idno type="URLCatalogue">https://kxp.k10plus.de/DB=2.1/PPNSET?PPN=184397103</idno>
+                            <idno type="URLImages">https://collections.thulb.uni-jena.de/receive/HisBest_cbu_00029505</idno>
+                            <idno type="URN">https://nbn-resolving.org/urn:nbn:de:urmel-f02861e2-7dc3-495b-8f37-62a980aaebd52</idno>
+                        </idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>
+                    Zeilenumbrüche nach Original
+                    Auszeichnungen von Personen, Orten
+                    Kommentierung Registereinträge
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Wissenschaft</classCode>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!-- Gleich werde ich den Seitenanfang durch das selbstschließene pb-Element einleiten und einen Verweis auf das Digitalisat einfügen -->
+            <pb facs="https://collections.thulb.uni-jena.de/rsc/viewer/HisBest_derivate_00015941/Mittheilungen_Perthes_ErgBl_129602507_1903_144_0005.tif"/>
+            <!-- Das stört etwas, aber leider müssen wir die Tagebucheinträge in ein Kapitel einordnen. Wir nehmen als "Kapitel" unsere Nummer vom Beginn -->   
+            <div type="chapter" n="001">
+                    <div type="diaryEntry" n="1">
+                        <p>Hier steht ein Tagebucheintrag
+                        <lb/>Und hier ist die zweite Zeile
+                        </p>
+                    </div>
+                    <div type="diaryEntry" n="2">
+                        <p>Hier steht ein zweiter Tagebucheintrag</p>
+                        <!-- Wie nervig. Der Tagebucheintrag wird durch einen Seitenwechsel unterbrochen -->
+                        <pb facs="https://collections.thulb.uni-jena.de/rsc/viewer/HisBest_derivate_00015941/Mittheilungen_Perthes_ErgBl_129602507_1903_144_0006.tif"/>
+                    </div>
+                <div type="diaryEntry">
+                    <p>Hier steht ein dritter Tagebucheintrag</p>
+                </div>
+             </div>
+            
+        </body>
+    </text>
+</TEI>
